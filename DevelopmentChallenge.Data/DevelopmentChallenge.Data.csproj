@@ -44,11 +44,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\FormaGeometrica.cs" />
+    <Compile Include="Classes\IGeometricShapes.cs" />
+    <Compile Include="Classes\ReportShape.cs" />
+    <Compile Include="Classes\Shapes\Circle.cs" />
+    <Compile Include="Classes\Shapes\EquilateralTriangle.cs" />
+    <Compile Include="Classes\Shapes\Rectangle.cs" />
+    <Compile Include="Classes\Shapes\Square.cs" />
+    <Compile Include="Classes\Shapes\Trapeze.cs" />
+    <Compile Include="Contracts\Constans\Languages.cs" />
+    <Compile Include="Languages\ResDevelopmentChallenge.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Languages\ResDevelopmentChallenge.en-US.resx" />
+    <EmbeddedResource Include="Languages\ResDevelopmentChallenge.es-ES.resx" />
+    <EmbeddedResource Include="Languages\ResDevelopmentChallenge.it-IT.resx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
